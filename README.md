@@ -6,3 +6,8 @@
 `
 
 
+## Generate abi from solidity 
+
+`solc --abi ./sol/GoToken.sol -o build 
+`
+
