@@ -11,3 +11,8 @@
 `solc --abi ./sol/GoToken.sol -o build 
 `
 
+
+
+## Generate bin from sol
+ `solc --bin ./sol/GoToken.sol -o build
+ `
