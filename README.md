@@ -19,5 +19,5 @@
 
 ## Generate Go Binding from abi 
 `
-abigen --abi=./build/GoToken.abi --pkg=GoToken --out=go-gen/GoToken.go
+abigen --bin=./build/GoToken.bin --abi=./build/GoToken.abi --pkg=GoToken --out=go-gen/GoToken.go
 `
