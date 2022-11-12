@@ -16,3 +16,8 @@
 ## Generate bin from sol
  `solc --bin ./sol/GoToken.sol -o build
  `
+
+## Generate Go Binding from abi 
+`
+abigen --abi=./build/GoToken.abi --pkg=GoToken --out=go-gen/GoToken.go
+`
