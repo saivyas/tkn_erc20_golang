@@ -27,3 +27,9 @@ abigen --bin=./build/GoToken.bin --abi=./build/GoToken.abi --pkg=GoToken --out=g
 `
 	go run main.go 
 `
+
+**Token contract address will be updated to .env copy it !**
+
+## Check on polygonscan
+`https://mumbai.polygonscan.com/
+`
