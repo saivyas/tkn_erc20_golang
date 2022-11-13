@@ -20,7 +20,9 @@ var myenv map[string]string
 const envLoc = ".env"
 
 func main() {
+	loadEnv()
 	ctx := context.Background()
+	fmt.Println(os.Getenv("GATEWAY"))
 	client, err := ethclient.Dial(os.Getenv("GATEWAY")) //address of testnet
 	if err != nil {
 		log.Fatalf("could not connect to Ethereum gateway: %v\n", err)
@@ -40,7 +42,7 @@ func NewSession(ctx context.Context) (session GoToken.GoTokenSession) {
 		log.Println("Error getting private key: ", err)
 	}
 
-	auth, err := bind.NewKeyedTransactorWithChainID(pk, big.NewInt(5))
+	auth, err := bind.NewKeyedTransactorWithChainID(pk, big.NewInt(80001))
 
 	if err != nil {
 		log.Println("Error getting auth: ", err)
