@@ -21,3 +21,9 @@
 `
 abigen --bin=./build/GoToken.bin --abi=./build/GoToken.abi --pkg=GoToken --out=go-gen/GoToken.go
 `
+
+## Deploy Contract 
+
+`
+	go run main.go 
+`
